@@ -1,0 +1,27 @@
+body {
+    background-image:('/images/skateboard-image.png');
+    /* background-color: black; */
+    background-size: cover;
+    /* opacity: 0.5; */
+    
+    /* background-size: auto; */
+  }
+  
+  }
+  .main-content {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color:#0b0ba8;
+  }
+
+  h1 {
+    color: #0b0ba8;
+    margin:0;
+    font-variant: medium-caps;
+    font-size: 80px;
+    text-align: center;
+    font-family: Permanent Marker;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(242, 244, 253);

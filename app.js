@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded',() => {
-    // console.log('JavaScript loaded');
 
     const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit)
@@ -10,30 +9,34 @@ document.addEventListener('DOMContentLoaded',() => {
 
 const handleFormSubmit = function(event){
     event.preventDefault()
+    
   
     const listElement = document.createElement('li');
-  
+
+    const first_name = document.createElement('p');
     first_name.textContent = this.first_name.value;
     listElement.appendChild(first_name);
 
     const last_name = document.createElement('p');
-    title.textContent = this.last_name.value;
+    last_name.textContent = this.last_name.value;
     listElement.appendChild(last_name);
   
     const board_brand = document.createElement('p');
-    author.textContent = this.author.value;
+    board_brand.textContent = this.board_brand.value;
     listElement.appendChild(board_brand);
   
     const sponsor = document.createElement('p');
-    category.textContent = this.sponsor.value;
+    sponsor.textContent = this.sponsors.value;
     listElement.appendChild(sponsor);
   
-    const readingList = document.querySelector(`#professional-skateboarders`);
-    readingList.appendChild(listElement);
+    const professionalSkakeboarders = document.querySelector(`#professional-skateboarders`);
+    professionalSkakeboarders.appendChild(listElement);
+    
   
     this.reset();
   }
-  
+    
     const handleDeleteClick = function(){
-    const readingList = document.querySelector('#professional-skateboarders');
-    readingList.innerHTML = '';
+    const professionalSkakeboarders = document.querySelector('#professional-skateboarders');
+    professionalSkakeboarders.innerHTML = '';
+    }
