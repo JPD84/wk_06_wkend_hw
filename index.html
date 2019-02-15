@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Skateboarders</title>
+    <h1>Professional Skateboarders</h1>
+    <script scr="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+        <form id="new-item-form">
+                <div id="form-wrapper">
+                  <div class="form-item">
+                    <label for="first name" class="primary">First Name</label>
+                    <input type="text" id="first name" required/>
+                    <label for="last name" class="primary">Last Name</label>
+                    <input type="text" id="last name" required/>
+                  </div>
+
+                  <div class="form-item">
+                        <label for="board brand" class="primary">Board Brand</label>
+                    <select id="board type">
+                        <option value="" disabled selected></option>
+                        <option value="blueprint">Blueprint</option>
+                        <option value="birdhouse">Birdhouse</option>
+                        <option value="element">Element</option>
+                        <option value="santa cruz">Santa Cruz</option>
+                        <option value="wknd">WKND</option>
+                        <option value="enjoi">ENJOI</option>
+                        <option value="flip">FLIP</option>
+                    </select>
+
+                    <div class="form-item">
+                            <label for="sponsors" class="primary">Sponsors</label>
+                        <select id="sponsors">
+                              <option value="" disabled selected></option>
+                              <option value="etnies">Etnies</option>
+                              <option value="volcom">Volcom</option>
+                              <option value="toy machine">Toy Machine</option>
+                              <option value="nike">Nike</option>
+                              <option value="dc shoes">DC Shoes</option>
+                              <option value="alien workshop">Alien Workshop</option>
+                            </select>
+                          </div>
+                </div>
+                <input type="submit" value="save"/>
+            </form>
+            <button type="button" name="button" id="delete-btn">Delete All</button>
+        
+            
+        <ul id="professional-skateboarders"></ul>
+</body>
+</html>
