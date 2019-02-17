@@ -14,13 +14,17 @@
         <form id="new-item-form">
                 <div id="form-wrapper">
                   <div class="form-item">
-                    <label for="first name" class="primary">First Name</label>
-                    <input type="text" id="first_name" required/>
-                    <label for="last name" class="primary">Last Name</label>
-                    <input type="text" id="last_name" required/>
+                        <div class="flex-container">
+                    
+                      <label for="first name" class="primary">First Name</label>
+                      <input type="text" id="first_name" required/>
+                      <label for="last name" class="primary">Last Name</label>
+                      <input type="text" id="last_name" required/>
+                  
                   </div>
 
                   <div class="form-item">
+                        <div class="flex-container">
                         <label for="board_brand" class="primary">Board Brand</label>
                     <select id="board_brand">
                         <option value="" disabled selected></option>
@@ -32,8 +36,10 @@
                         <option value="enjoi">ENJOI</option>
                         <option value="flip">FLIP</option>
                     </select>
+                
 
                     <div class="form-item">
+                            <div class="flex-container">
                             <label for="sponsors" class="primary">Sponsors</label>
                         <select id="sponsors">
                               <option value="" disabled selected></option>
@@ -46,9 +52,33 @@
                             </select>
                           </div>
                 </div>
-                <input type="submit" value="save"/>
+            <!-- <p>Skateboarder rank</p>
+                <div>
+                    <input type="radio" id="amateur" name="rank" value="amateur"
+                        checked>
+                            <label for="amatuer">Amateur</label>
+                        </div>
+                    <div>
+                    <input type="radio" id="professional" name="rank" value="professional">
+                        <label for="professinal">Professional</label>
+                            </div> -->
+                <div class="flex-container">
+                <button type="submit" value="save" id="save-btn">Save</button>
+            </div>
             </form>
+            <div class="flex-container">
             <button type="button" name="button" id="delete-btn">Delete All</button>
+        </div>
+        <div><h2>Promotional videos</h2>
+        </div>
         <ul id="professional-skateboarders"></ul>
+        <div>
+        <ul id="promotional-videos"></ul>
+        </div>
+        <div class="iframe-container">
+        <iframe width="350" height="250" float="left" src="https://www.youtube.com/embed/9m1nYnr_zEs" frameborder="0"
+         allowfullscreen></iframe>
+        </div>
+    
 </body>
 </html>
